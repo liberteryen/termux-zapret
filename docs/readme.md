@@ -8,7 +8,8 @@ su -c "cat /proc/net/netfilter/nfnetlink_queue"
 apt install libnetfilter-queue clang build-essential net-tools netcat-openbsd -y libmnl
 git clone https://github.com/liberteryen/termux-zapret --depth 1
 cd termux-zapret
-make -j8```
+make -j8
+```
 ```bash
 #çalıştır
 su -c "~/termux-zapret/nfq/nfqws --qnum=200 --uid=0 --filter-tcp=80,443 XXXXX"
